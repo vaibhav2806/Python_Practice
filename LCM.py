@@ -7,4 +7,4 @@ while(True):
     if (maxNum % a == 0) and (maxNum % b == 0):
         break
     maxNum += 1
-print(f"L.C.M of {a} and {b} is {maxNum}")
+print (f"L.C.M of {a} and {b} is {maxNum}")
