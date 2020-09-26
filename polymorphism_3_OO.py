@@ -8,7 +8,8 @@ class student:
     def __add__(self,other):
         return self.m1 + other.m1 , self.m2 + other.m2
 
-    def __str__(self):
+#overriding str to print values further
+    def __str__(self):                   
         return self.m1 , self.m2
 
 ob1 = student(56,65)

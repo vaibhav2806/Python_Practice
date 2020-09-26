@@ -1,15 +1,18 @@
-#METHOD OVERLOADING 
-import multipledispatch
+# METHOD OVERLOADING - Overloading occurs when 2 or more methods in 1 class have the same name but different parameters
+# method overloading isn't directly supported by python
 
-@dispatch (int,int)
-def add(a,b):
-    r = a+b
-    print(r)
+def products(self, a = None, b = None, c = None):
+    s = 0
+    if (a != None and b != None and c != None):
+        s = a+b+c
 
-@dispatch(int,int,int)
-def add(a,b,c):
-    r = a+b+c
-    print(r)
+    elif (a != None and b != None):
+        s = a+b
 
-#add(5,6)
-add(5,6,7)
+    else:
+        s = a
+    return s
+     
+print(products(56,65,89))
+print(products(25,52))
+print(products(25))
