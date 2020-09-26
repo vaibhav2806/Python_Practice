@@ -22,16 +22,6 @@ def matrix_print(matrix):
         for j in range(len(matrix[0])):
             print("\t", matrix[i][j], end = " ")
         print("\t")
-        
-def again():
-    print("""**type y or yes to do again otherwise type n or no**""")
-    do_again = input("yes or no?")
-    if do_again == 'yes' or do_again == 'y':
-        transpose()
-    elif do_again == 'no' or do_again == 'n':
-        print("See You Later.")
-    else:
-        again()
 
 m = int(input("Enter the value of m: "))
 n = int(input("Enter the value of n: "))
@@ -39,8 +29,6 @@ n = int(input("Enter the value of n: "))
 print("Enter values in matrix A:\n")
 A = matrix(m,n)
 matrix_print(A)
-
-again()
 
 t = transpose(A)
 print("\n")
