@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Spyder Editor
 
-This is a temporary script file.
-"""
 import re                                    #regex library
 print("MY CLACULATOR")
 print("Type 'quit' to exit")                 #to exit from calculator
@@ -19,7 +15,7 @@ def perform_math():                          #math function to perform problems
     else: #if prv is not equal tp 0 then prv holds some value an we will use it as input and perform the task stated
         equation = input(str(previous))
         
-    if equation == 'quit':                   #to turn of the calculator
+    if equation == 'quit':                   #to turn off the calculator
         print("Goodbye")
         run = False
     else:                                    #to perform task on calculator
@@ -34,4 +30,3 @@ while run:                                   #while the calculator is on we will
     perform_math()
     
 
-#
