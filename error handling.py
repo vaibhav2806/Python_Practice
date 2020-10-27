@@ -12,7 +12,7 @@ numC = int(input("enter a number:"))
 try:
     if numA<numB and numA<numC:
         print("numA is the samallest number"
-        
+
     elif numB<numA and numB<numC:
         print("numB is the smallest number")
     
